@@ -2,7 +2,7 @@
 
 ---
 
-The Vue 3.x version of (Vue2 Timepicker)[https://phoenixwong.github.io/vue2-timepicker/]
+The Vue 3.x version of [Vue2 Timepicker](https://phoenixwong.github.io/vue2-timepicker/)
 
 ---
 
