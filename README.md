@@ -38,11 +38,11 @@ import 'vue3-timepicker/dist/VueTimepicker.css'
 
 ```javascript
 // CommonJS
-import VueTimepicker from 'vue2-timepicker/dist/VueTimepicker.cjs.js'
+import VueTimepicker from 'vue3-timepicker/dist/VueTimepicker.cjs.js'
 // ESM
-import VueTimepicker from 'vue2-timepicker/dist/VueTimepicker.esm.js'
+import VueTimepicker from 'vue3-timepicker/dist/VueTimepicker.esm.js'
 // UMD (Minified)
-import VueTimepicker from 'vue2-timepicker/dist/VueTimepicker.global.js'
+import VueTimepicker from 'vue3-timepicker/dist/VueTimepicker.global.js'
 ```
 
 **CSS**
@@ -81,4 +81,4 @@ The live Demo is still working in progress.
 
 ## License
 
-[MIT](https://github.com/phoenixwong/vue2-timepicker/blob/master/LICENSE.md)
+[MIT](https://github.com/phoenixwong/vue3-timepicker/blob/master/LICENSE.md)

@@ -1,6 +1,6 @@
 {
   "name": "vue3-timepicker",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "A dropdown time picker (hour|minute|second) for Vue 3.x, with flexible time format support",
   "author": "Phoenix Wong <phoenixyfwong@gmail.com>",
   "scripts": {
@@ -18,11 +18,10 @@
     "*.md"
   ],
   "peerDependencies": {
-    "vue": "^3.0.4"
+    "vue": "^3.0.5"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.4"
+    "vue": "^3.0.5"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.2.2",
@@ -33,6 +32,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "core-js": "^3.8.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "postcss": "^8.2.4",
