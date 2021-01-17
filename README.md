@@ -8,6 +8,14 @@ The Vue 3.x version of [Vue2 Timepicker](https://phoenixwong.github.io/vue2-time
 
 A dropdown time picker (hour|minute|second) for **Vue 3.x**, with flexible time format support.
 
+## Migration
+
+Upgrading from the Vue 2.x version  [vue2-timepicker](https://phoenixwong.github.io/vue2-timepicker/)? Please check [MIGRATION.md](https://github.com/phoenixwong/vue3-timepicker/blob/master/MIGRATION.md) for basic guidelines.
+
+## Dependencies
+
+[Vue.js](http://vuejs.org/)&nbsp;&nbsp;&nbsp;![npm peer dependency version](https://img.shields.io/npm/dependency-version/vue3-timepicker/peer/vue?style=flat-square)
+
 ## Installation
 
 ```bash
@@ -69,7 +77,6 @@ import VueTimepicker from 'vue3-timepicker/src/VueTimepicker.vue'
 
 ## More Documentation (WIP)
 
-- Migration Guide
 - Basic Usage
 - Data Binding
 - Advance Usage

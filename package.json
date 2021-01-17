@@ -1,6 +1,6 @@
 {
   "name": "vue3-timepicker",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "A dropdown time picker (hour|minute|second) for Vue 3.x, with flexible time format support",
   "author": "Phoenix Wong <phoenixyfwong@gmail.com>",
   "scripts": {
@@ -12,7 +12,7 @@
   "unpkg": "dist/VueTimepikcer.global.js",
   "css": "dist/VueTimepicker.css",
   "files": [
-    "dist/*",
+    "dist/*.{js,css,map}",
     "src/*",
     "*.json",
     "*.md"
@@ -62,7 +62,7 @@
   ],
   "keywords": [
     "vue",
-    "vue2",
+    "vue3",
     "time",
     "picker",
     "dropdown",
