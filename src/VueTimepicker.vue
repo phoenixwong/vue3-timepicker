@@ -577,7 +577,7 @@ export default {
     'opts.secondInterval' (newInteval) {
       this.renderList('second', newInteval)
     },
-    value: {
+    modelValue: {
       deep: true,
       handler () {
         this.readValues()
