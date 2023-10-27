@@ -18,10 +18,10 @@
     "*.md"
   ],
   "peerDependencies": {
-    "vue": "^3.0.5"
+    "vue": "3.3.4"
   },
   "dependencies": {
-    "vue": "^3.0.5"
+    "vue": "3.3.4"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.2.2",
