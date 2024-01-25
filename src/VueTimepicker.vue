@@ -11,6 +11,7 @@ const CONFIG = {
 
 const DEFAULT_OPTIONS = {
   format: 'HH:mm',
+  confirmButtonText: 'OK',
   minuteInterval: 1,
   secondInterval: 1,
   hourRange: null,
@@ -63,6 +64,8 @@ export default {
     apmLabel: { type: String },
     amText: { type: String },
     pmText: { type: String },
+
+    confirmButtonText: { type: String },
 
     blurDelay: { type: [ Number, String ] },
     advancedKeyboard: { type: Boolean, default: false },
@@ -449,6 +452,10 @@ export default {
       return this.apmLabel || this.apmType
     },
 
+    confirmText() {
+      return this.confirmButtonText || DEFAULT_OPTIONS.confirmButtonText;
+    },
+
     inputWidthStyle () {
       if (!this.inputWidth || !this.inputWidth.length) { return }
       return {
@@ -577,7 +584,7 @@ export default {
     'opts.secondInterval' (newInteval) {
       this.renderList('second', newInteval)
     },
-    value: {
+    modelValue: {
       deep: true,
       handler () {
         this.readValues()
@@ -2034,6 +2041,12 @@ export default {
             </template>
           </ul>
         </template>
+        <span v-text="opts.confirmText"
+              class="btn blue"
+              @click="this.toggleActive()"
+              tabindex="-1"
+        >
+        </span>
       </template><!-- / Common Keyboard Support -->
 
       <!--
@@ -2127,6 +2140,12 @@ export default {
             </template>
           </ul>
         </template>
+        <span v-text="opts.confirmText"
+              class="btn blue"
+              @click="this.toggleActive()"
+              tabindex="-1"
+        >
+        </span>
       </template><!-- / Advanced Keyboard Support -->
     </div>
   </div>
@@ -2343,5 +2362,34 @@ export default {
   color: #a5a5a5;
   cursor: default;
   font-size: 0.8em;
+}
+
+.vue__time-picker .dropdown {
+  margin-bottom: 45px;
+  .select-list {
+    position: relative;
+    height: 12em !important;
+    padding-bottom: 50px;
+    .btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 100%;
+      height: 44px;
+      color: #fff;
+      text-align: center;
+      line-height: 44px;
+      background: #41b883;
+      cursor: pointer;
+      &:focus-visible {
+        outline: none;
+      }
+      &.blue {
+        @include btn;
+        background: #0070bd;
+      }
+    }
+  }
 }
 </style>
